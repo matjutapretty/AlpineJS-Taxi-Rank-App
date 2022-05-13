@@ -9,6 +9,7 @@
     <title>Taxi Rank App</title>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 </head>
 <body>
 
@@ -17,6 +18,8 @@
         let queue
         let profit
         let totalPerTrip
+        let userFare
+        let userDestination
     </script>
 
     <div>
@@ -30,6 +33,13 @@
         { destination: 'Belhar', queue: 34, taxiCount: 0, fare: 15.00, taxiFareTotal: 0 },
         { destination: 'Bellville', queue: 23, taxiCount: 0, fare: 10.00, taxiFareTotal: 0 }]}">
 
+        <br>
+        
+        <div>
+            <strong>Total profit for the day: R<span x-text="_.sumBy(taxiData, function(taxi) {return taxi.taxiFareTotal})"></span></strong>
+        </div>
+        
+        <br>
 
         <table class="table">
             <thead>
