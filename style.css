@@ -1,8 +1,53 @@
-body {
-    background-color: lightcoral;
+body{
+    background-color: #a2d2ff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    box-sizing: border-box;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
+
+input {
+    width: 8rem;
+}
+
+.destination{
+    width: 10rem
+}
+
+h1{
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+p{
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+  
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+  
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+
 h1 {
     text-align: center;
 }
