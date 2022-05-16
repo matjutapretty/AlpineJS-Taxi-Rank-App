@@ -45,13 +45,13 @@ p{
     to {bottom: 0; opacity: 0;}
 }
 
-
-
-
-h1 {
-    text-align: center;
+@media (min-width: 450px) {
+    body {
+        background-color: #ffff;
+    }
 }
-
-h6 {
-    text-align: center;
+@media (min-width: 960px) {
+    body {
+        background-color: #a2d2ff;
+    }
 }
